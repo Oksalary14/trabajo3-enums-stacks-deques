@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Punto 4 y 5</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Punto 4 y 5: Function&lt;T,R&gt; y verTotales</h1>
+        
+        <div class="card">
+            <p><strong> Libro seleccionado:</strong> <span th:text="${libro.titulo}"></span></p>
+            <p><strong> Autor:</strong> <span th:text="${libro.autor}"></span></p>
+            <p><strong> Datos en el Stack (conteo):</strong> <span th:text="${libro.conteo}"></span></p>
+            <hr style="margin: 15px 0; border: 0; border-top: 1px solid var(--purple-pastel);">
+            <p style="font-size: 1.2rem;"><strong> Total de la suma (usando function):</strong> <span th:text="${total}" style="color: var(--purple-dark); font-weight: bold;"></span></p>
+        </div>
+
+        <p style="color: var(--text-light); font-size: 0.9rem;">* Revisa la consola de Visual Studio Code para ver el mensaje impreso por el método <code>verTotales()</code>.</p>
+
+        <a href="/" class="btn">← Volver </a>
+    </div>
+</body>
+</html>

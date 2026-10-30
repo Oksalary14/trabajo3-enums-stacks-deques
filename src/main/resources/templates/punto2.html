@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Punto 2</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Punto 2: Iterators</h1>
+        
+        <h3>📚 ListIterator dell Stack de Libros:</h3>
+        <ul>
+            <li th:each="item : ${listaStack}" th:text="${item}"></li>
+        </ul>
+
+        <h3>🏛️ Iterator del Deque de la biblioteca:</h3>
+        <ul>
+            <li th:each="item : ${listaDeque}" th:text="${item}"></li>
+        </ul>
+
+        <a href="/" class="btn">← Volver </a>
+    </div>
+</body>
+</html>

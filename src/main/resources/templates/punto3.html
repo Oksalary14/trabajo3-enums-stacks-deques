@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Punto 3</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Punto 3: Filtrar con Stream</h1>
+        <p>Libros filtrados por Enum <strong>NOVELA</strong>:</p>
+        <ul>
+            <li th:each="item : ${listaFiltrada}" th:text="${item}"></li>
+        </ul>
+        <a href="/" class="btn">← Volver </a>
+    </div>
+</body>
+</html>
